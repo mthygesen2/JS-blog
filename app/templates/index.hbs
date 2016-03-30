@@ -1,8 +1,8 @@
-<h1> Welcome to Super Rentals </h1>
+<h1> Blogginator </h1>
 
 <ul>
-  {{#each model as |post|}}
-    {{post-tile post=post}}
+  {{#each model.posts as |post|}}
+    {{post-tile post=post save="save"}}
   {{/each}}
 </ul>
 

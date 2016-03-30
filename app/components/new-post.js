@@ -9,8 +9,8 @@ export default Ember.Component.extend({
     save() {
       var params = {
         title: this.get('title'),
-        author: this.get('author'),
         date: this.get('date'),
+        author: this.get('author'),
         image: this.get('image'),
         content: this.get('content'),
       };
@@ -19,3 +19,13 @@ export default Ember.Component.extend({
     }
   }
 });
+
+
+
+
+// var inputNames = ['title', 'author', 'date', 'image', 'content'];
+// var self = this;
+// self will save the element to this so that below it will know what this is
+// inputNames.forEach(function(name) {
+//   self.set(name, '');
+// });
