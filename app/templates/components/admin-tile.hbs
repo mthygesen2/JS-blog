@@ -9,7 +9,7 @@
     </ul>
   </div>
   <div class="post-body">
-    {{post.image}}
+    <img src={{post.image}} alt={{post.title}} />
     {{post.content}}
   </div>
   <button {{action 'delete' post}}>Delete Post</button>
