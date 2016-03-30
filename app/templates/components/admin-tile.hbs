@@ -1,0 +1,16 @@
+<li>
+  <div class="post-title">
+    {{post.title}}
+  </div>
+  <div class="post-details">
+    <ul>
+      <li>{{post.author}}</li>
+      <li>{{post.date}}</li>
+    </ul>
+  </div>
+  <div class="post-body">
+    {{post.image}}
+    {{post.content}}
+  </div>
+  <button {{action 'delete' post}}>Delete Post</button>
+</li>
