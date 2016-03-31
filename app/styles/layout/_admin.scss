@@ -1,4 +1,11 @@
+.adminContainer {
+  margin: 0 5%;
+  width: 90%;
+}
+
 .adminPost {
+  display: flex;
+  flex-flow: column;
   .post-title {
     font-size: 1.5em;
   }
@@ -7,4 +14,5 @@
   img {
     width: 300px;
   }
+
 }
