@@ -2,9 +2,10 @@
 
 <ul>
   {{#each model.posts as |post|}}
-    {{post-tile post=post save="save"}}
+    {{post-tile post=post save="save" update="update"}}
   {{/each}}
 </ul>
+
 
 {{#link-to 'about'}}About{{/link-to}}
 {{#link-to 'contact'}}Click here to contact us.{{/link-to}}

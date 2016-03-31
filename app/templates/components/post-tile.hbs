@@ -12,12 +12,14 @@
     <img src={{post.image}} alt={{post.title}} />
     {{post.content}}
   </div>
+
   <div class="commentSection">
     <ul>
-      {{#each model.comments as |comment|}}
-        <h1>{{comment-tile comment=comment}}</h1>
+      {{#each post.comments as |comment|}}
+        {{comment-tile comment=comment update="update"}}
       {{/each}}
     </ul>
-    {{new-comment post=post save="save"}}
   </div>
+
+  {{new-comment post=post save="save"}}
 </li>

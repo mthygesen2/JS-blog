@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     });
   },
   actions:  {
-    // Saves new comment from post-tile
+    // Saves new comment from post-tile sends to model
     save(params) {
       var newComment= this.store.createRecord('comment', params);
       var post = params.post;
@@ -16,6 +16,15 @@ export default Ember.Route.extend({
       newComment.save().then(function() {
         return post.save();
       });
+      this.transitionTo('index');
+    },
+    update(comment, params) {
+      Object.keys(params).forEach(function(key) {
+        if(params[key]!==undefined) {
+          comment.set(key,params[key]);
+        }
+      });
+      comment.save();
       this.transitionTo('index');
     }
   }
