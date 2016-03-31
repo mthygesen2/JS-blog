@@ -1,0 +1,25 @@
+*:not(body):not(html) {
+    box-sizing: border-box;
+    border: 1px dashed lightgrey;
+}
+.wrapper {
+  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+li a{
+  text-decoration: none;
+}
+
+footer {
+  height: 100px;
+  text-align: center;
+}
+.container {
+  flex: 1;
+}

@@ -1,0 +1,32 @@
+.post-details {
+  img {
+    width: 100%;
+  }
+}
+
+.post-title {
+  h2 {
+    margin: 5px;
+  }
+  a {
+    color: $dark-grey;
+  }
+}
+
+.post-details {
+  padding: 5px;
+  li {
+    color: lighten($dark-grey, 40%);
+  }
+  li:nth-child(1) {
+    float: left;
+  }
+  li:nth-child(2) {
+    float: right;
+  }
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

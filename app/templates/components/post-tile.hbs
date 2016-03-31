@@ -1,12 +1,13 @@
 <li>
   <div class="post-title">
-    {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}
+    <h2>{{#link-to 'post' post.id}}{{post.title}}{{/link-to}}</h2>
   </div>
   <div class="post-details">
     <ul>
       <li>{{post.author}}</li>
       <li>{{post.date}}</li>
+      <li><img src={{post.image}}></li>
     </ul>
   </div>
-  
+
 </li>
