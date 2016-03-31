@@ -1,11 +1,17 @@
 .main-content {
   width: 70%;
   float: left;
+  padding: 20px 10px;
 }
 .sidebar {
-  width: 30%;
+  width: 28%;
   float: right;
+  padding-top: 20px;
+  p {
+    padding: 10px;
+  }
   a {
     color: $dark-grey;
+    padding-left: 10px;
   }
 }

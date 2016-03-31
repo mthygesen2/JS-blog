@@ -1,8 +1,8 @@
+<h2>Add New Post</h2>
+{{new-post save="save"}}
 <h2>Posts</h2>
 <ul>
   {{#each model as |post|}}
     {{admin-tile post=post update="update" destroyPost="destroyPost"}}
   {{/each}}
 </ul>
-<h2>Add New Post</h2>
-{{new-post save="save"}}

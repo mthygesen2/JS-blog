@@ -1,6 +1,11 @@
-*:not(body):not(html) {
-    box-sizing: border-box;
-    border: 1px dashed lightgrey;
+// *:not(body):not(html) {
+//     box-sizing: border-box;
+//     border: 1px dashed lightgrey;
+// }
+
+body {
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .wrapper {
   font-family: sans-serif;
@@ -14,12 +19,18 @@ ul {
 }
 li a{
   text-decoration: none;
+  font-family: $font-stack;
 }
 
-footer {
-  height: 100px;
-  text-align: center;
-}
 .container {
   flex: 1;
+}
+
+h1, h2, h3 {
+  font-family: $font-stack;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.5em;
 }

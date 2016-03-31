@@ -1,0 +1,13 @@
+
+footer {
+  height: 150px;
+  text-align: center;
+  background-color: $dark-grey;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}

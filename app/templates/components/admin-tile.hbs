@@ -1,4 +1,4 @@
-<li>
+<li class="adminPost">
   <div class="post-title">
     {{post.title}}
   </div>
@@ -10,8 +10,9 @@
   </div>
   <div class="post-body">
     <img src={{post.image}} alt={{post.title}} />
-    {{post.content}}
+    <p>{{post.content}}</p>
   </div>
   {{update-post post=post update="update"}}
   <button {{action 'delete' post}}>Delete Post</button>
+  <hr>
 </li>
