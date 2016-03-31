@@ -7,7 +7,4 @@ export default Ember.Route.extend({
       comments: this.store.findAll('comment')
     });
   },
-  actions:  {
-    
-  }
 });
