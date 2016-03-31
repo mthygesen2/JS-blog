@@ -1,6 +1,6 @@
 <li>
   <div class="post-title">
-    {{post.title}}
+    {{#link-to 'post' post.id}}{{post.title}}{{/link-to}}
   </div>
   <div class="post-details">
     <ul>
@@ -8,18 +8,5 @@
       <li>{{post.date}}</li>
     </ul>
   </div>
-  <div class="post-body">
-    <img src={{post.image}} alt={{post.title}} />
-    {{post.content}}
-  </div>
-
-  <div class="commentSection">
-    <ul>
-      {{#each post.comments as |comment|}}
-        {{comment-tile comment=comment update="update" delete="delete"}}
-      {{/each}}
-    </ul>
-  </div>
-
-  {{new-comment post=post save="save"}}
+  
 </li>
