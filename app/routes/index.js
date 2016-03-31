@@ -26,6 +26,13 @@ export default Ember.Route.extend({
       });
       comment.save();
       this.transitionTo('index');
+    },
+    destroyComment(comment) {
+      var post = comment.get('post');
+      comment.destroyRecord().then(function(){
+         post.save();
+      });
+      this.transitionTo('index');
     }
   }
 });

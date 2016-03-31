@@ -2,7 +2,7 @@
 
 <ul>
   {{#each model.posts as |post|}}
-    {{post-tile post=post save="save" update="update"}}
+    {{post-tile post=post save="save" update="update" destroyComment="destroyComment"}}
   {{/each}}
 </ul>
 

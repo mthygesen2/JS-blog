@@ -16,7 +16,7 @@
   <div class="commentSection">
     <ul>
       {{#each post.comments as |comment|}}
-        {{comment-tile comment=comment update="update"}}
+        {{comment-tile comment=comment update="update" delete="delete"}}
       {{/each}}
     </ul>
   </div>
